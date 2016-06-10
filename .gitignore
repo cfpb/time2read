@@ -6,7 +6,7 @@
 *.exe
 *.o
 *.so
-_site
+_site/
 
 # Packages #
 ############
@@ -31,24 +31,42 @@ _site
 ######################
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 Icon?
 ehthumbs.db
 Thumbs.db
 
-# Dependencies #
-################
+# Vim swap files #
+##################
+*.swp
+
+# Python #
+#################
+*.pyc
+*.egg-info/
+__pycache__/
+*.py[cod]
+.env
+
+# Django #
+#################
+*.egg-info
+.installed.cfg
+
+# Unit test / coverage reports
+#################
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Front-End #
+#############
 node_modules/
 bower_components/
-src/vendor/
-
-# Grunt #
-#########
 .grunt/
-
-# Test reports #
-################
-test/coverage
-test/junit
+src/vendor/
+dist/
